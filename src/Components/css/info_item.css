@@ -1,0 +1,46 @@
+.item {
+  text-align: center;
+  border-right: solid 20px rgba(0, 0, 0, 0);
+  border-left: solid 20px rgba(0, 0, 0, 0);
+  border-top: solid 1px #333;
+  border-bottom: solid 1px #000;
+  margin-bottom: 2px;
+
+  /*
+	background-image: none, none;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto 75%, auto 65%;
+    background-position: left center, right center; */
+}
+.item:nth-child(2) {
+    border-top: none;
+  }
+.item:last-child {
+  border-bottom: none;
+}
+.icon {
+  width: 16px;
+
+  /*
+	background-image: none, none;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto 75%, auto 65%;
+    background-position: left center, right center; */
+}
+
+.copyright {
+  position: relative;
+  display: block;
+  float: left;
+  top: 0;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-image: url("./../../Media/shadow.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 150% 20px;
+  padding-top: 5px;
+  font-size: 50%;
+  letter-spacing: 1px;
+}

@@ -1,0 +1,93 @@
+.box_info {
+    position: relative;
+    float: left;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: #101a20;
+    /*border-top:solid 3px #282d39;
+  background-color:#102026;
+  background-image: url("line_bottom.png"), url("line_bottom.png");
+  background-repeat: no-repeat;
+  background-size: 80% 1px, 80% 3px;
+  background-position: center bottom, center top; 
+  margin-bottom:10px;
+  
+  border-top:solid 3px #005f77;*/
+    overflow: hidden;
+    padding: 0;
+    background-image: url("./../../Media/top_blick.png"), url("./../../Media/line_bottom.png");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100% 3px, 80% 1px;
+    background-position: center top, center bottom;
+}
+.box-button {
+  position:absolute;
+  display: block;
+  float: left;
+  width: 100%;
+  height: 50px;
+  bottom: 1px;
+  background-color: #000000;
+  text-align: center;
+  background-image: url("./../../Media/line_bottom.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 80% 1px;
+}
+
+.button-icon {
+  display: inline-block;
+  float: none;
+  width: 100px;
+  height: 100%;
+  text-align: center;
+  background-image: none;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 75%;
+  cursor: pointer;
+  background-color: transparent;
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+  -moz-border-image: url(./../../Media/btn_stroke.png) 2;
+  -webkit-border-image: url(./../../Media/btn_stroke.png) 2;
+  -o-border-image: url(./../../Media/btn_stroke.png) 2;
+  border-image: url(./../../Media/btn_stroke.png) 2;
+  margin: 0;
+  outline: none;
+}
+.button-icon:focus {outline: none;}
+.sym-m5 {
+  border: none;
+  background-image: url("./../../Media/sym_m4.png");
+}
+
+.sym-m5:hover, .sym-m5.select {
+  background-image: url("./../../Media/sym_m4_on.png");
+}
+
+.sym-m15 {
+  background-image: url("./../../Media/sym_m15.png");
+}
+
+.sym-m15:hover, .sym-m15.select {
+  background-image: url("./../../Media/sym_m15_on.png");
+}
+
+.sym-m30 {
+  border: none;
+  background-image: url("./../../Media/sym_m30.png");
+}
+
+.sym-m30:hover, .sym-m30.select {
+  background-image: url("./../../Media/sym_m30_on.png");
+}
+
+@media only screen and (min-height: 768px) {
+  .box-button {
+    background-position: center top;
+    height: 60px;
+
+}
+}

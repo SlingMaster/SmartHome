@@ -1,0 +1,23 @@
+.chart-container {
+  position: relative;
+  display: block;
+  /*background-color: rgba(255, 255, 255, 0.2);*/
+  width: auto;
+  height: 100%;
+  /* instead padding */
+  border-top: 10px solid rgba(0, 0, 0, 0);
+  border-bottom: 10px solid rgba(0, 0, 0, 0);
+  /* overflow: hidden;*/
+}
+
+.bars-container {
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  justify-content: center;
+  min-width: 100%;
+  width: auto;
+  /* border-left: thin dashed #0Ff;
+  border-right: thin dashed #0Ff; */
+  height: 100%;
+}

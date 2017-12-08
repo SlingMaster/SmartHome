@@ -1,0 +1,43 @@
+.spinner_box {
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 34px;
+  left: 10px;
+  top: 0;
+  overflow: hidden;
+  /*
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  */
+  border-top: solid 3px rgba(0, 0, 0, 0);
+}
+.spinner {
+  width: 100%;
+  height: 100%;
+  background: center center url("./../../Media/spinner.png") no-repeat;
+  background-size: auto 65%;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  pointer-events: none;
+  border-radius: 50%;
+}
+.spinner.run-animation {
+  animation: spinner_rotate 1s infinite linear;
+  -moz-animation: spinner_rotate 1s infinite linear;
+  -webkit-animation: spinner_rotate 1s infinite linear;
+  animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+}
+
+@keyframes spinner_rotate {
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}

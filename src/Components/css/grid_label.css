@@ -1,0 +1,40 @@
+.chart-grid-hr {
+  width: 100%;
+  height: auto;
+  background-image: url("./../../Media/line_grid.png");
+ /*  background-image: url("./../../Media/line_bottom.png"); */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 70% 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+   /*opacity: 0.9;
+ border-bottom: solid thin #07C; */
+}
+.grid-label {
+  min-width: 30px;
+  border-radius: 6px;
+  color: #07C;
+  /* color:#0AE; */
+  letter-spacing: 1px; 
+  background-color: rgba(31,31,31,.7);
+  font-size: 60%;
+  font-weight: bold;
+  text-shadow: -1px -1px 0px #000;
+  padding: 1px 5px 0 5px;
+  margin: 0 10px;
+  z-index: 1; 
+}
+.grid-title {
+  min-width: 30px;
+  border-radius: 5px;
+  color: #07C;
+  background-color: #1f1f1f;
+  font-size: 60%;
+  font-weight: bold;
+  padding: 1px 5px;
+  margin: 0 10px;
+  z-index: 1;
+}

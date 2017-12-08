@@ -1,0 +1,93 @@
+.text-with-icon {
+  float: none;
+  display: inline-block;
+  text-align: center;
+  height: auto;
+  background-image: none;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 16px auto;
+  margin-right: 6px;
+  font-size: 80%;
+  text-transform: uppercase;
+  padding: 4px 0 4px 18px;
+}
+.text-with-icon.no_transform {
+  text-transform: none;
+  letter-spacing: 2px;
+  font-size: 75%;
+  padding: 10px 0 5px 0;
+}
+.fan_container {
+  display: inline-block;
+  padding: 0px;
+  margin: 0;
+  height: 100%;
+  background-image: none;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+.temperature {
+  background-image: url("./../../Media/temperature.png");
+}
+
+.humidity {
+  background-image: url("./../../Media/humidity.png");
+}
+
+.t_avg {
+  background-image: url("./../../Media/t_avg.png");
+}
+
+.t_min {
+  background-image: url("./../../Media/t_min.png");
+}
+
+.sym_time {
+  background-image: url("./../../Media/sym_time.png");
+}
+
+.fan_icon {
+  display: block;
+  height: 26px;
+  width: 26px;
+  background-image: url("./../../Media/fan_icon.png");
+  background-position: center center;
+  background-size: auto 10px;
+  margin: 0;
+}
+.fan_icon.rotate {
+    animation: icon-spin infinite 1.0s linear;
+}
+@keyframes icon-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.text-with-icon span {
+  color: #b0bec5;
+}
+
+.chart_title {
+  background-image: url("./../../Media/sym_m30.png");
+  background-size: 26px auto;
+  padding: 6px 0 6px 30px;
+  font-size: 100%;
+}
+
+.title_color {
+  color: #b0bec5;
+  letter-spacing: 1px;
+}
+.text-with-icon.value-param {
+  letter-spacing: 0;
+  font-size: 100%;
+  background-size: 26px auto;
+  padding: 4px 0 4px 20px;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 rgb(0, 0, 0), 1px 1px 0 rgb(0, 0, 0);
+}

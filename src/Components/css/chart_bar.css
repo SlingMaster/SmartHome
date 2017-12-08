@@ -1,0 +1,232 @@
+.chart_bar {
+  display: inline-block;
+  float: none;
+  width: 5px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 0 0.5px;
+}
+.chart_bar.hide {
+  opacity: 0;
+}
+
+.chart_label {
+  position: absolute;
+  float: left;
+  display: block;
+  font-size: 70%;
+  /* 
+  color: #369;	  bottom: -6px;
+  
+  color:#686d73;
+  */
+  color: #607d8b;
+  bottom: 5%;
+
+  text-align: center;
+  z-index: 1;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 rgb(0, 0, 0), 1px 1px 0 rgb(0, 0, 0),
+    0 0 1px rgb(0, 0, 0);
+  margin-left: 2px;
+  transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  padding-top: 12px;
+  background-image: url("./../../Media/btn_stroke.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 2px 70%;
+}
+
+.chart_max {
+  position: absolute;
+  width: 5px;
+  height: 0;
+  bottom: 0;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  background-image: url("./../../Media/bar_hot_water.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  transition: 0.6s ease;
+  background-size: 5px 150px;
+}
+
+.chart_max.humidity {
+  background-image: url("./../../Media/bar_humidity.png");
+  /* phone img size */
+  background-size: 5px 85px;
+}
+
+.marker_min,
+.marker_avg,
+.marker_humidity {
+  position: absolute;
+  width: 3px;
+  height: 20px;
+  top: 100%;
+  margin-left: 1px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  transition: 0.6s ease;
+}
+/* .marker_min {
+  background: -ms-linear-gradient(
+    top,
+    rgba(24, 255, 255, 1) 0%,
+    rgba(24, 255, 255, 0) 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(24, 255, 255, 1) 0%,
+    rgba(24, 255, 255, 0) 100%
+  );
+  background: -moz-linear-gradient(
+    top,
+    rgba(24, 255, 255, 1) 0%,
+    rgba(24, 255, 255, 0) 100%
+  );
+} */
+.marker_avg {
+  background-image: -ms-linear-gradient(
+    top,
+    rgba(24, 255, 255, 1) 0%,
+    rgba(24, 255, 255, 0) 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(24, 255, 255, 1) 0%,
+    rgba(24, 255, 255, 0) 100%
+  );
+  background: -moz-linear-gradient(
+    top,
+    rgba(24, 255, 255, 1) 0%,
+    rgba(24, 255, 255, 0) 100%
+  );
+}
+.marker_avg.red {
+  background-image: -ms-linear-gradient(
+    top,
+    rgba(255, 0, 51, 1) 0%,
+    rgba(255, 0, 51, 0) 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(255, 0, 51, 1) 0%,
+    rgba(255, 0, 51, 0) 100%
+  );
+  background: -moz-linear-gradient(
+    top,
+    rgba(255, 0, 51, 1) 0%,
+    rgba(255, 0, 51, 0) 100%
+  );
+}
+
+.marker_min {
+  background-image: -ms-linear-gradient(
+    top,
+    rgba(21, 101, 192, 1) 0%,
+    rgba(21, 101, 192, 0) 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(21, 101, 192, 1) 0%,
+    rgba(21, 101, 192, 0) 100%
+  );
+  background: -moz-linear-gradient(
+    top,
+    rgba(21, 101, 192, 1) 0%,
+    rgba(21, 101, 192, 0) 100%
+  );
+}
+
+.marker_humidity {
+  background-image: -ms-linear-gradient(
+    top,
+    rgba(128, 204, 255, 1) 0%,
+    rgba(128, 204, 255, 0) 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(128, 204, 255, 1) 0%,
+    rgba(128, 204, 255, 0) 100%
+  );
+  background: -moz-linear-gradient(
+    top,
+    rgba(128, 204, 255, 1) 0%,
+    rgba(20, 44, 59, 0) 100%
+  );
+}
+
+.marker_fan {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: #fc0;
+  bottom: 5px;
+  border-radius: 50%;
+}
+
+/* background-color: #1de9b6; */
+/* .marker_fan.last2 {
+  background-color: rgba(24, 255, 255, 1);
+  opacity: 0.25;
+  animation: blinking 1s linear infinite;
+}
+@keyframes blinking {
+  from,
+  49.9% {
+  background-color: rgba(24, 255, 255, 1);
+    opacity: 0.25;
+  }
+  50%,
+  to {
+    opacity: 0.75;
+  }
+} */
+@-webkit-keyframes blinker {
+  from {
+    opacity: 0.75;
+  }
+  to {
+    opacity: 0.25;
+  }
+}
+
+@keyframes blinker {
+  from {
+    opacity: 0.75;
+  }
+  to {
+    opacity: 0.25;
+  }
+}
+
+.last {
+  background-color: rgba(24, 255, 255, 1);
+  text-decoration: blink;
+  -webkit-animation-name: blinker;
+  -webkit-animation-duration: 0.6s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
+
+  animation-name: blinker;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+@media only screen and (min-height: 768px) {
+  .chart_max {
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 5px 275px;
+  }
+  .chart_max.humidity {
+    background-size: 5px 145px;
+  }
+}
